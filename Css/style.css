@@ -1,0 +1,1377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: white;
+}
+
+#up {
+  position: relative;
+  display: flex;
+}
+
+#top {
+  background: url(../images/bg-pattern-intro.png),
+    linear-gradient(90deg, hsl(13, 100%, 72%) 20%, hsl(356, 100%, 66%) 60%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: 2400px 2400px, auto 500px;
+  padding: 50px;
+  width: auto;
+  height: 500px;
+  border-bottom-left-radius: 5.5rem;
+}
+
+#middle {
+  height: 1000px;
+  background-image: url(../images/illustration-editor-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top right -270px;
+  background-size: 1000px 1000px;
+  overflow: hidden;
+}
+
+#bottomsec {
+  margin-top: 100px;
+  height: 1000px;
+  background-image: url(../images/illustration-laptop-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left -280px;
+  background-size: 1000px 1000px;
+  overflow: hidden;
+}
+
+#cover {
+  height: 600px;
+  background: url(../images/illustration-phones.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 100px left 150px;
+  background-size: 600px 600px;
+}
+
+#middlesc {
+  border-bottom-left-radius: 5.5rem;
+  border-top-right-radius: 5.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: url(../images/bg-pattern-circles.svg),
+    linear-gradient(90deg, hsl(237, 17%, 21%) 30%, hsl(237, 23%, 32%) 60%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom -100px left -150px, center;
+  background-size: 1000px 1000px, auto auto;
+}
+
+header {
+  position: relative;
+  display: inline-block;
+  font-size: 2.8rem;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+}
+
+.dropbtn {
+  background: center right no-repeat;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  font-family: 'Overpass', sans-serif;
+}
+
+img {
+  margin-bottom: 15px;
+  width: 14px;
+ transform: rotate(180deg);
+}
+img:hover {
+  width: 14px;
+  transform: rotate(360deg);
+}
+.rightnav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+h1 {
+  padding: 40px;
+  font-size: 3.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+h2 {
+  padding: 40px;
+  margin-top: 100px;
+  font-size: 2.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  color: hsl(208, 49%, 24%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#middlebot {
+  margin-top: 50px;
+  color: hsl(0, 0%, 100%);
+  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-template-areas:
+    'content'
+    'content';
+}
+
+#middlep {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-template-areas:
+    'svg content'
+    'svg content';
+}
+
+.hmiddle {
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: hsl(208, 49%, 24%);
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-template-areas:
+    'content'
+    'content';
+  justify-content: flex-start;
+}
+
+.hthree {
+  padding: 50px;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: hsl(208, 49%, 24%);
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-template-areas:
+    'content svg'
+    'content svg';
+  justify-content: flex-end;
+}
+
+#textmiddle {
+  display: block;
+  padding: 50px;
+  height: 50px;
+}
+
+#textmidbot {
+  padding: 10px;
+}
+
+#textbot {
+  margin-top: 200px;
+  display: block;
+  padding: 50px;
+  height: 50px;
+}
+
+.textp {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: hsl(208, 49%, 24%);
+  font-size: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-template-areas:
+    'content svg '
+    'content svg';
+}
+
+.botp {
+  color: hsl(208, 49%, 24%);
+  font-size: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  display: grid;
+  justify-content: right;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-template-areas:
+    'svg content'
+    'svg content ';
+}
+
+.navcenter {
+  align-items: center;
+  text-align: center;
+}
+
+.navbot {
+  padding: 20px;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+}
+
+.navbutton {
+  padding: 15px;
+  letter-spacing: 1.5rem;
+  text-indent: 1.5rem;
+}
+
+.Login {
+  background: transparent;
+  cursor: pointer;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border: 2px solid snow;
+  border-radius: 30px;
+}
+
+.Login:hover {
+  background: snow;
+  color: black;
+  cursor: pointer;
+  padding: 15px 32px;
+  mix-blend-mode: screen;
+  text-align: center;
+}
+.Login:active {
+  transform: scale(0.85);
+}
+.dropdown {
+  display: inline-block;
+  padding: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  font-weight: 700;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.attribution {
+  margin-bottom: 280px;
+  margin-left: 70px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(202, 92%, 67%);
+  font-size: 15px;
+}
+
+.attribution a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(216, 34, 192, 0.918) 20%,
+    rgb(185, 83, 102) 40%,
+    hsl(240, 10%, 16%) 60%
+  );
+}
+
+#Login {
+  background: transparent;
+  cursor: pointer;
+  color: white;
+  mix-blend-mode: screen;
+  padding: 15px 25px;
+  text-align: center;
+  border: none;
+}
+
+#Login:hover {
+  background-color: blanchedalmond;
+  cursor: pointer;
+  padding: 15px 25px;
+  text-align: center;
+  background-clip: inherit;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#Login:active {
+  transform: scale(0.85);
+}
+span {
+  font-size: 20px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  position: flex;
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 30px;
+  background: hsl(0, 0%, 95%);
+  color: black;
+  mix-blend-mode: screen;
+  padding: 15px 25px;
+  text-align: center;
+  -webkit-text-fill-color: text transparent;
+}
+
+.buttons:hover {
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 30px;
+  background: hsl(355, 100%, 74%);
+  padding: 15px 25px;
+  text-align: center;
+  color: white;
+}
+.buttons:active {
+  transform: scale(0.85);
+}
+#footer {
+  border-top-right-radius: 5.5rem;
+  font-size: 18px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  background: hsl(240, 10%, 16%);
+  height: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    'Blogr Product Company Contact'
+    'Blogr Product Company Contact';
+}
+
+.header {
+  padding: 10px;
+  display: inline-block;
+  justify-content: flex-start;
+  font-size: 25px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+}
+
+li:hover {
+  background: rgb(247, 220, 244);
+  background: radial-gradient(
+    circle,
+    rgba(247, 220, 244, 1) 5%,
+    rgba(140, 165, 232, 1) 25%,
+    rgba(222, 94, 157, 1) 50%,
+    rgba(207, 32, 121, 1) 80%
+  );
+  cursor: pointer;
+  border-bottom: #f9f9f9 2px solid;
+}
+
+.Blogr {
+  grid-area: Blogr;
+  display: grid;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px;
+  margin-left: 150px;
+}
+
+.Product {
+  grid-area: Product;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+}
+
+.Company {
+  grid-area: Company;
+  display: block;
+  justify-content: flex-start;
+  padding: 50px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+}
+
+.Connect {
+  grid-area: Contact;
+  display: block;
+  justify-content: flex-start;
+  padding: 50px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 760px) {
+  /*Mobile 760px*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 7.5px;
+    background-color: white;
+  }
+
+  #up {
+    position: relative;
+    display: flex;
+  }
+
+  #top {
+    background: url(../images/bg-pattern-intro.svg),
+      linear-gradient(90deg, hsl(13, 100%, 72%) 20%, hsl(356, 100%, 66%) 60%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 1200px 1200px, auto 2500px;
+    padding: 25px;
+    width: auto;
+    height: 250px;
+    border-bottom-left-radius: 5.5rem;
+  }
+
+  #middle {
+    height: 500px;
+    background-image: url(../images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top right -137px;
+    background-size: 500px 500px;
+    overflow: hidden;
+  }
+
+  #bottomsec {
+    margin-top: 50px;
+    height: 500px;
+    background-image: url(../images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left -140px;
+    background-size: 500px 500px;
+    overflow: hidden;
+  }
+
+  #cover {
+    height: 300px;
+    background: url(../images/illustration-phones.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 50px left 75px;
+    background-size: 300px 300px;
+  }
+
+  #middlesc {
+    border-bottom-left-radius: 5.5rem;
+    border-top-right-radius: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: url(../images/bg-pattern-circles.svg),
+      linear-gradient(90deg, hsl(237, 17%, 21%) 30%, hsl(237, 23%, 32%) 60%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -50px left -75px, center;
+    background-size: 500px 500px, auto auto;
+  }
+
+  header {
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+  }
+
+  .dropbtn {
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Overpass', sans-serif;
+  }
+  img {
+  width: 13px;
+ transform: rotate(180deg);
+}
+img:hover {
+  width: 13px;
+  transform: rotate(360deg);
+}
+
+  .rightnav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  h1 {
+    padding: 2px;
+    font-size: 1.75rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+
+  h2 {
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: hsl(208, 49%, 24%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #middlebot {
+    margin-top: 25px;
+    color: hsl(0, 0%, 100%);
+    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    grid-template-areas:
+      'content'
+      'content';
+  }
+
+  #middlep {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.75rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    grid-template-areas:
+      'svg content'
+      'svg content';
+  }
+
+  .hmiddle {
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: hsl(208, 49%, 24%);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    grid-template-areas:
+      'content'
+      'content';
+    justify-content: flex-start;
+  }
+
+  .hthree {
+    padding: 25px;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: hsl(208, 49%, 24%);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    grid-template-areas:
+      'content svg'
+      'content svg';
+    justify-content: flex-end;
+  }
+
+  #textmiddle {
+    display: block;
+    padding: 25px;
+    height: 25px;
+  }
+
+  #textmidbot {
+    padding: 10px;
+  }
+
+  #textbot {
+    margin-top: 100px;
+    display: block;
+    padding: 25px;
+    height: 25px;
+  }
+
+  .textp {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: hsl(208, 49%, 24%);
+    font-size: 0.7rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    grid-template-areas:
+      'content svg '
+      'content svg';
+  }
+
+  .botp {
+    color: hsl(208, 49%, 24%);
+    font-size: 0.7rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    display: grid;
+    justify-content: right;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    grid-template-areas:
+      'svg content'
+      'svg content ';
+  }
+
+  .navcenter {
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbot {
+    padding: 10px;
+    color: white;
+    font-size: 0.75rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+  }
+
+  .navbutton {
+    padding: 8px;
+    letter-spacing: 1.5rem;
+    text-indent: 1.5rem;
+  }
+
+  .Login {
+    background: transparent;
+    cursor: pointer;
+    color: white;
+
+    padding: 12px 22px;
+    text-align: center;
+    border: 2px solid snow;
+    border-radius: 30px;
+  }
+
+  .Login:hover {
+    background: snow;
+    color: black;
+    cursor: pointer;
+    padding: 12px 22px;
+    mix-blend-mode: screen;
+    text-align: center;
+  }
+
+  .dropdown {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    font-weight: 700;
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border: 2px solid white;
+    border-radius: 15px;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
+
+  .attribution {
+    margin-bottom: 140px;
+    margin-left: 55px;
+    color: white;
+    font-size: 9px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(202, 92%, 67%);
+    font-size: 9px;
+  }
+
+  .attribution a:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(216, 34, 192, 0.918) 20%,
+      rgb(185, 83, 102) 40%,
+      hsl(240, 10%, 16%) 60%
+    );
+  }
+
+  #Login {
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    mix-blend-mode: screen;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+  }
+
+  #Login:hover {
+    background-color: blanchedalmond;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    background-clip: inherit;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  span {
+    font-size: 10px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    position: flex;
+    text-align: center;
+  }
+
+  .buttons {
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    background: hsl(0, 0%, 95%);
+    color: black;
+    mix-blend-mode: screen;
+    padding: 10px 20px;
+    text-align: center;
+    -webkit-text-fill-color: text transparent;
+  }
+
+  .buttons:hover {
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    background: hsl(355, 100%, 74%);
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+  }
+
+  #footer {
+    border-top-right-radius: 5.5rem;
+    font-size: 9.5px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    background: hsl(240, 10%, 16%);
+    height: 225px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      'Blogr Product Company Contact'
+      'Blogr Product Company Contact';
+  }
+
+  .header {
+    padding: 10px;
+    display: inline-block;
+    justify-content: flex-start;
+    font-size: 12.5px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+  }
+
+  li {
+    list-style: none;
+    padding: 10px;
+  }
+
+  li:hover {
+    background: rgb(247, 220, 244);
+    background: radial-gradient(
+      circle,
+      rgba(247, 220, 244, 1) 5%,
+      rgba(140, 165, 232, 1) 25%,
+      rgba(222, 94, 157, 1) 50%,
+      rgba(207, 32, 121, 1) 80%
+    );
+    cursor: pointer;
+    border-bottom: #f9f9f9 2px solid;
+  }
+
+  .Blogr {
+    grid-area: Blogr;
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 25px;
+    margin-left: 75px;
+  }
+
+  .Product {
+    grid-area: Product;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 25px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+  }
+
+  .Company {
+    grid-area: Company;
+    display: block;
+    justify-content: flex-start;
+    padding: 25px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+  }
+
+  .Connect {
+    grid-area: Contact;
+    display: block;
+    justify-content: flex-start;
+    padding: 25px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  /*Mobile 375px*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 9px;
+    background-color: white;
+  }
+
+  #up {
+    position: relative;
+    display: flex;
+  }
+
+  #top {
+    background: url(../images/bg-pattern-intro.png),
+      linear-gradient(90deg, hsl(13, 100%, 72%) 20%, hsl(356, 100%, 66%) 60%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 600px 600px, auto 600px;
+    padding: 25px;
+    width: inherit;
+    height: inherit;
+    border-bottom-left-radius: 5.5rem;
+  }
+
+  #middle {
+    height: 500px;
+    background-image: url(../images/illustration-editor-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center right -137px;
+    background-size: 350px 350px;
+    overflow: hidden;
+  }
+
+  #bottomsec {
+    margin-top: 25px;
+    height: 500px;
+    background-image: url(../images/illustration-laptop-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center left -110px;
+    background-size: 350px 350px;
+    overflow: hidden;
+  }
+
+  #cover {
+    height: 300px;
+    background: url(../images/illustration-phones.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 125px left 15px;
+    background-size: 180px 180px;
+  }
+
+  #middlesc {
+    border-bottom-left-radius: 5.5rem;
+    border-top-right-radius: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: url(../images/bg-pattern-circles.svg),
+      linear-gradient(90deg, hsl(237, 17%, 21%) 30%, hsl(237, 23%, 32%) 60%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -50px left -75px, center;
+    background-size: 400px 400px, auto auto;
+  }
+
+  header {
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+  }
+
+  .dropbtn {
+    align-items: center;
+    color: white;
+    padding: 10px;
+    font-size: 9px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Overpass', sans-serif;
+    background-size: 5px 5px;
+  }
+  img {
+  width: 13px;
+ transform: rotate(180deg);
+}
+img:hover {
+  width: 13px;
+  transform: rotate(360deg);
+}
+
+  .rightnav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  h1 {
+    padding: 15px;
+    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+
+  h2 {
+    padding: 15px;
+    margin-top: 25px;
+    font-size: 1.15rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: hsl(208, 49%, 24%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #middlebot {
+    margin-top: 15px;
+    color: hsl(0, 0%, 100%);
+    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 0.5fr));
+    grid-template-areas:
+      'content'
+      'content';
+  }
+
+  #middlep {
+    color: hsl(0, 0%, 100%);
+    font-size: 9px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 0.5fr));
+    grid-template-areas:
+      'svg content'
+      'svg content';
+  }
+
+  .hmiddle {
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: hsl(208, 49%, 24%);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    grid-template-areas:
+      'content'
+      'content';
+    justify-content: flex-start;
+  }
+
+  .hthree {
+    padding: 15px;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: hsl(208, 49%, 24%);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 0.5fr));
+    grid-template-areas:
+      'content svg'
+      'content svg';
+    justify-content: flex-end;
+  }
+
+  #textmiddle {
+    display: block;
+    padding: 15px;
+    height: 15px;
+  }
+
+  #textmidbot {
+    padding: 10px;
+  }
+
+  #textbot {
+    margin-top: 50px;
+    display: block;
+    padding: 25px;
+    height: 25px;
+  }
+
+  .textp {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: hsl(208, 49%, 24%);
+    font-size: 0.7rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    grid-template-areas:
+      'content svg '
+      'content svg';
+  }
+
+  .botp {
+    color: hsl(208, 49%, 24%);
+    font-size: 0.7rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    display: grid;
+    justify-content: right;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    grid-template-areas:
+      'svg content'
+      'svg content ';
+  }
+
+  .navcenter {
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbot {
+    padding: 15px;
+    color: white;
+    font-size: 0.75rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+  }
+
+  .navbutton {
+    padding: 8px;
+    letter-spacing: 1rem;
+  }
+
+  .Login {
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    padding: 9px 9px;
+    text-align: center;
+    border: 2px solid snow;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .Login:hover {
+    background: snow;
+    color: black;
+    cursor: pointer;
+    padding: 9px 9px;
+    mix-blend-mode: screen;
+    text-align: center;
+  }
+
+  .dropdown {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 7px 20px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    font-weight: 700;
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border: 2px solid white;
+    border-radius: 15px;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
+
+  .attribution {
+    margin-bottom: 120px;
+    margin-left: 5px;
+    color: white;
+    font-size: 6px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(202, 92%, 67%);
+    font-size: 6px;
+  }
+
+  .attribution a:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(216, 34, 192, 0.918) 20%,
+      rgb(185, 83, 102) 40%,
+      hsl(240, 10%, 16%) 60%
+    );
+  }
+
+  #Login {
+    cursor: pointer;
+    color: white;
+    mix-blend-mode: screen;
+    padding: 9px 9px;
+    text-align: center;
+    border: none;
+  }
+
+  #Login:hover {
+    background-color: blanchedalmond;
+    cursor: pointer;
+    padding: 9px 9px;
+    text-align: center;
+    background-clip: inherit;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  span {
+    font-size: 9px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    position: flex;
+    text-align: center;
+  }
+
+  .buttons {
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    background: hsl(0, 0%, 95%);
+    color: black;
+    mix-blend-mode: screen;
+    padding: 9px 9px;
+    text-align: center;
+    -webkit-text-fill-color: text transparent;
+  }
+
+  .buttons:hover {
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    background: hsl(355, 100%, 74%);
+    padding: 9px 9px;
+    text-align: center;
+    color: white;
+  }
+
+  #footer {
+    padding: 15px;
+    border-top-right-radius: 5.5rem;
+    font-size: 9px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    background: hsl(240, 10%, 16%);
+    height: 225px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      'Blogr Product Company Contact'
+      'Blogr Product Company Contact';
+  }
+
+  .header {
+    padding: 5px;
+    display: inline-block;
+    justify-content: flex-start;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+  }
+
+  li {
+    list-style: none;
+    padding: 9px;
+  }
+
+  li:hover {
+    background: rgb(247, 220, 244);
+    background: radial-gradient(
+      circle,
+      rgba(247, 220, 244, 1) 5%,
+      rgba(140, 165, 232, 1) 25%,
+      rgba(222, 94, 157, 1) 50%,
+      rgba(207, 32, 121, 1) 80%
+    );
+    cursor: pointer;
+    border-bottom: #f9f9f9 2px solid;
+  }
+
+  .Blogr {
+    grid-area: Blogr;
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+    margin-left: 5px;
+  }
+
+  .Product {
+    grid-area: Product;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+  }
+
+  .Company {
+    grid-area: Company;
+    display: block;
+    justify-content: flex-start;
+    padding: 3px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+  }
+
+  .Connect {
+    grid-area: Contact;
+    display: block;
+    justify-content: flex-start;
+    padding: 3px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+  }
+}
